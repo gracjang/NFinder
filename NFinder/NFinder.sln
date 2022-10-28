@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFinder.Api", "NFinder.Api\NFinder.Api.csproj", "{A56AD5E0-8460-4BC6-AB93-E270FF434421}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A56AD5E0-8460-4BC6-AB93-E270FF434421} = {8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}
+	EndGlobalSection
+EndGlobal
