@@ -1,6 +1,6 @@
 namespace NFinder.Domain.Exceptions;
 
-public class InvalidJobStatusException : DomainException
+public class InvalidJobStatusException : FinderException
 {
     public object JobStatus { get; }
 

@@ -1,6 +1,6 @@
 namespace NFinder.Domain.Exceptions;
 
-public sealed class InvalidObjectIdException : DomainException
+public sealed class InvalidObjectIdException : FinderException
 {
     public object Id { get; }
 
