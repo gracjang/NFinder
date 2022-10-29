@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFinder.Api", "NFinder.Api\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFinder.Domain", "NFinder.Domain\NFinder.Domain.csproj", "{FA7F3815-4A46-4311-B72A-3D4CBC3723F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFinder.Infrastructure", "NFinder.Infrastructure\NFinder.Infrastructure.csproj", "{DA521C33-98E8-4142-8CF6-1C8E10477204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +18,18 @@ Global
 		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A56AD5E0-8460-4BC6-AB93-E270FF434421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7F3815-4A46-4311-B72A-3D4CBC3723F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7F3815-4A46-4311-B72A-3D4CBC3723F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7F3815-4A46-4311-B72A-3D4CBC3723F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7F3815-4A46-4311-B72A-3D4CBC3723F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA521C33-98E8-4142-8CF6-1C8E10477204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA521C33-98E8-4142-8CF6-1C8E10477204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA521C33-98E8-4142-8CF6-1C8E10477204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA521C33-98E8-4142-8CF6-1C8E10477204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A56AD5E0-8460-4BC6-AB93-E270FF434421} = {8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}
+		{FA7F3815-4A46-4311-B72A-3D4CBC3723F0} = {8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}
+		{DA521C33-98E8-4142-8CF6-1C8E10477204} = {8B42182F-98FE-48EB-8EB5-BBEB6849F8AD}
 	EndGlobalSection
 EndGlobal
