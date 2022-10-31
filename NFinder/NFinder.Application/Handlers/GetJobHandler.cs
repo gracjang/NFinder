@@ -25,7 +25,7 @@ public class GetJobHandler : IRequestHandler<GetJobRequest, GetJobResponse>
         var job = await _jobRepository.GetById(jobId);
         if (job == null)
         {
-            throw new JobNotFoundException(jobId.Value);
+            throw new NotFoundJobException(jobId.Value);
         }
 
         return new GetJobResponse(job.Id, job.Status.ToString(), job.Combinations.Select(x => x.Value));

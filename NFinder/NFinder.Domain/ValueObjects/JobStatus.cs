@@ -26,9 +26,9 @@ public sealed record JobStatus
         Value = value;
     }
 
-    public static JobStatus SetPending() => new(PendingStatus);
-    public static JobStatus SetProcessed() => new(ProcessedStatus);
-    public static JobStatus SetFailed() => new(FailedStatus);
+    public static JobStatus Pending() => new(PendingStatus);
+    public static JobStatus Processed() => new(ProcessedStatus);
+    public static JobStatus Failed() => new(FailedStatus);
     
     public static implicit operator string(JobStatus combination) => combination.Value;
 
