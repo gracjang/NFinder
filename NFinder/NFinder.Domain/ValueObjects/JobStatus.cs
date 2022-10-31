@@ -33,4 +33,6 @@ public sealed record JobStatus
     public static implicit operator string(JobStatus combination) => combination.Value;
 
     public static implicit operator JobStatus(string jobStatus) => new(jobStatus);
+    
+    public override string ToString() => Value;
 }

@@ -1,4 +1,4 @@
-namespace NFinder.Application.Responses;
+namespace NFinder.Application.DTOs.Responses;
 
 using NFinder.Infrastructure.Models;
 

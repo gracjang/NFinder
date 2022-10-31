@@ -1,9 +1,9 @@
 namespace NFinder.Application.Handlers;
 
 using MediatR;
+using NFinder.Application.DTOs.Requests;
+using NFinder.Application.DTOs.Responses;
 using NFinder.Application.Exceptions;
-using NFinder.Application.Requests;
-using NFinder.Application.Responses;
 using NFinder.Domain.Entities;
 using NFinder.Domain.Repositories;
 using NFinder.Domain.ValueObjects;
@@ -28,11 +28,6 @@ public class GetJobHandler : IRequestHandler<GetJobRequest, GetJobResponse>
             throw new JobNotFoundException(jobId.Value);
         }
 
-        return new GetJobResponse()
-        {
-            Combination = job.Combinations.Select(x => x.Value),
-            JobId = job.Id.Value,
-            Status = job.Status.Value
-        };
+        return new GetJobResponse(job.Id, job.Status.ToString(), job.Combinations.Select(x => x.Value));
     }
 }

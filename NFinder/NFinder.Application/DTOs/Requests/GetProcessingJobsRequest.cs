@@ -1,6 +1,6 @@
-namespace NFinder.Application.Requests;
+namespace NFinder.Application.DTOs.Requests;
 
-using NFinder.Application.Responses;
+using NFinder.Application.DTOs.Responses;
 using NFinder.Infrastructure.Models;
 
 public sealed record GetProcessingJobsRequest : IFinderRequest<GetProcessingJobsResponse>;

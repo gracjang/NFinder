@@ -18,4 +18,5 @@ public sealed record Combination
 
     public static implicit operator string(Combination combination) => combination.Value;
     public static implicit operator Combination(string combination) => new(combination);
+    public override string ToString() => Value;
 }

@@ -1,8 +1,8 @@
 namespace NFinder.Application.Handlers;
 
 using MediatR;
-using NFinder.Application.Requests;
-using NFinder.Application.Responses;
+using NFinder.Application.DTOs.Requests;
+using NFinder.Application.DTOs.Responses;
 
 public class StartJobHandler : IRequestHandler<StartJobRequest, StartJobResponse>
 {

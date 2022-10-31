@@ -18,4 +18,5 @@ public sealed record JobId
     
     public static implicit operator Guid(JobId jobId) => jobId.Value;
     public static implicit operator JobId(Guid value) => new(value);
+    public override string ToString() => Value.ToString();
 }
