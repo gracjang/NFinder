@@ -2,12 +2,12 @@ namespace NFinder.Infrastructure.Models;
 
 public abstract class ResponseBase
 {
-    public string Error { get; set; }
+    public Error? Error { get; set; }
 }
 
 public sealed class Error
 {
-    public string Code { get; set; }
+    public string? Code { get; set; }
 
-    public string Message { get; set; }
+    public string? Message { get; set; }
 }
