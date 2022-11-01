@@ -7,19 +7,19 @@ public sealed class Job
 {
     public JobId Id { get; }
 
-    public JobStatus Status { get; }
+    public JobStatus Status { get; private set; }
 
     public IEnumerable<Combination> Combinations => _combinations;
 
     private readonly HashSet<Combination> _combinations = new();
 
-    internal Job(JobId id, JobStatus status)
+    public Job(JobId id, JobStatus status)
     {
         Id = id;
         Status = status;
     }
 
-    internal void AddCombination(Combination combination)
+    public void AddCombination(Combination combination)
     {
         if (_combinations.Any(x => x.Value == combination.Value))
         {
@@ -29,4 +29,8 @@ public sealed class Job
         _combinations.Add(combination);
     }
     
+    public void ChangeStatus(JobStatus status)
+    {
+        Status = new JobStatus(status);
+    }
 }
